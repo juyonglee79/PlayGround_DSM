@@ -24,7 +24,8 @@ public class SplashActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                finish();
+                Intent toLogin = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(toLogin);
             }
         }, 2000);
     }
