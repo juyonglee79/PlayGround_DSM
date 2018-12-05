@@ -8,7 +8,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="fill_parent"
-        android:layout_height="220dp"
+        android:layout_height="250dp"
         android:layout_alignParentTop="true"
         android:height="?actionBarSize"
         android:background="#4fb262"
@@ -30,8 +30,8 @@
 
     <ImageView
         android:id="@+id/img_profile"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -44,11 +44,11 @@
         android:id="@+id/atlunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="10dp"
         android:text="점심 : "
         android:textColor="#ffffff"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_profile" />
 
@@ -57,10 +57,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:text="탁구"
         android:textColor="#ffffff"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/atlunch"
         app:layout_constraintTop_toBottomOf="@+id/img_profile" />
 
@@ -68,11 +68,11 @@
         android:id="@+id/atdinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="155dp"
         android:layout_marginTop="5dp"
         android:text="저녁 : "
         android:textColor="#ffffff"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/atlunch" />
 
@@ -84,7 +84,7 @@
         android:layout_marginTop="5dp"
         android:text="축구"
         android:textColor="#ffffff"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/atdinner"
         app:layout_constraintTop_toBottomOf="@+id/atlunch" />
 
@@ -93,7 +93,7 @@
         android:layout_width="360dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/back_mypage_box"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,6 +154,13 @@
         app:layout_constraintEnd_toEndOf="@+id/mypage_box"
         app:layout_constraintTop_toTopOf="@+id/mypage_box" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/line"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_box" />
+
     <TextView
         android:id="@+id/tv_logout"
         android:layout_width="wrap_content"
@@ -165,6 +172,13 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_box" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
 
     <TextView
         android:id="@+id/tv_changePassword"
@@ -178,6 +192,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_changePassword" />
+
     <TextView
         android:id="@+id/tv_pointMany"
         android:layout_width="wrap_content"
@@ -190,6 +211,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_changePassword" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pointMany" />
+
     <TextView
         android:id="@+id/tv_bug"
         android:layout_width="wrap_content"
@@ -201,5 +229,12 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_pointMany" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bug" />
 
 </android.support.constraint.ConstraintLayout>
