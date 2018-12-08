@@ -53,14 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        passwordFind = findViewById(R.id.tv_findPassword);
-        passwordFind.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent3 = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent3);
-            }
-        });
+
         signIn = findViewById(R.id.tv_signUp);
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
