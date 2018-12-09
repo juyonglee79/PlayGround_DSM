@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.dsm2018.playground.Activity.LeagueActivity;
 import com.dsm2018.playground.Activity.TournamentActivity;
 import com.dsm2018.playground.R;
 
@@ -33,9 +34,17 @@ public class TournamentFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent toTournament = new Intent(getActivity(), TournamentActivity.class);
+                startActivity(toTournament);
             }
         });
         league = view.findViewById(R.id.btn_league);
+        league.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toLeage = new Intent(getActivity(), LeagueActivity.class);
+                startActivity(toLeage);
+            }
+        });
         return view;
     }
 }
