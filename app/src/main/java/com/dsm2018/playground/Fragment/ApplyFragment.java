@@ -64,6 +64,7 @@ public class ApplyFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), PostingActivity.class);
+                intent.putExtra("sports", "7");
                 startActivity(intent);
             }
         });

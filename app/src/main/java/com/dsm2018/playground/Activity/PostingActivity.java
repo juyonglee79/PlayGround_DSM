@@ -28,8 +28,9 @@ public class PostingActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.img_setSports:
-                    Intent toPopup  = new Intent(PostingActivity.this, PopupActivity.class);
+                    Intent toPopup = new Intent(PostingActivity.this, PopupActivity.class);
                     startActivity(toPopup);
+                    break;
                 case R.id.btn_lunch:
                     btnLunch.setBackgroundResource(R.color.main);
                     btnLunch.setTextColor(getResources().getColorStateList(R.color.white));
@@ -42,6 +43,7 @@ public class PostingActivity extends AppCompatActivity {
                     btnLunch.setBackgroundResource(R.color.white);
                     btnLunch.setTextColor(getResources().getColorStateList(R.color.black));
                     break;
+
             }
         }
     }
@@ -52,44 +54,42 @@ public class PostingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_posting);
         BtnOnClickListener onClickListener = new BtnOnClickListener();
 
-//        string = "hello";
-//        num = findViewById(R.id.num);
-//        string = getIntent().getStringExtra("sports");
-//        if(string.getBytes().length > 0) {
-//            if (string.equals("1")) {
-//                num.setText(string);
-//            } else if (string.equals("2")) {
-//                num.setText(string);
-//            } else if (string.equals("3")) {
-//                num.setText(string);
-//            } else if (string.equals("4")) {
-//                num.setText(string);
-//            } else if (string.equals("5")) {
-//                num.setText(string);
-//            } else if (string.equals("6")) {
-//                num.setText(string);
-//            }
-//        }
+        num = findViewById(R.id.num);
+        sports = findViewById(R.id.img_setSports);
+        sports.setOnClickListener(onClickListener);
+        string = getIntent().getStringExtra("sports");
+        if (string.getBytes().length > 0) {
+            if (string.equals("1")) {
+                num.setText(string);
+            } else if (string.equals("2")) {
+                num.setText(string);
+            } else if (string.equals("3")) {
+                num.setText(string);
+            } else if (string.equals("4")) {
+                num.setText(string);
+            } else if (string.equals("5")) {
+                num.setText(string);
+            } else if (string.equals("6")) {
+                num.setText(string);
+            } else if(string.equals("7")){
+                num.setText("종목선택");
+            }
+
+        }
         btnLunch = findViewById(R.id.btn_lunch);
         btnLunch.setOnClickListener(onClickListener);
         btnDinner = findViewById(R.id.btn_dinner);
         btnDinner.setOnClickListener(onClickListener);
-        sports = findViewById(R.id.img_setSports);
-        sports.setOnClickListener(onClickListener);
+
         time = findViewById(R.id.et_time);
         title = findViewById(R.id.et_title);
         contents = findViewById(R.id.et_contents);
         btnPost = findViewById(R.id.btn_post);
-
         btnPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-
-
-
     }
-
 }
