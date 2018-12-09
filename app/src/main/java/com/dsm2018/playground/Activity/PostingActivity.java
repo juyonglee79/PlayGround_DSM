@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dsm2018.playground.Fragment.ApplyFragment;
 import com.dsm2018.playground.R;
@@ -88,7 +89,10 @@ public class PostingActivity extends AppCompatActivity {
         btnPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                Intent intent = new Intent(PostingActivity.this, MainActivity.class);
+                startActivity(intent);
+                Toast toast = Toast.makeText(getApplicationContext(), "게시글 작성완료", Toast.LENGTH_SHORT);
+                toast.show();
             }
         });
     }
