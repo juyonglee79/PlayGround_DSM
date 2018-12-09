@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="332dp"
-    android:layout_height="324dp">
+    android:layout_height="432dp">
 
     <TextView
         android:id="@+id/title"
@@ -23,6 +23,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
+        android:background="@drawable/ic_soccer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -32,6 +33,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
+        android:background="@drawable/ic_baseball"
         app:layout_constraintStart_toEndOf="@+id/ic_soccer"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -41,6 +43,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:layout_marginStart="8dp"
+        android:background="@drawable/ic_basketball"
         app:layout_constraintStart_toEndOf="@+id/ic_baseball"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -50,6 +53,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/ic_badminton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ic_soccer" />
 
@@ -59,6 +63,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/ic_dodgeball"
         app:layout_constraintStart_toEndOf="@+id/ic_badminton"
         app:layout_constraintTop_toBottomOf="@+id/ic_baseball" />
 
@@ -68,8 +73,19 @@
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_esports"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ic_basketball" />
+
+    <ImageView
+        android:id="@+id/ic_pingpong"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_pingpong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_badminton" />
 
     <TextView
         android:id="@+id/btn_sports_select"

@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.dsm2018.playground.R;
 
 public class PopupActivity extends Activity {
-    ImageView[] sports = new ImageView[6];
+    ImageView[] sports = new ImageView[7];
     TextView btnSelect;
     String data;
 
@@ -39,6 +39,9 @@ public class PopupActivity extends Activity {
                 case R.id.ic_esports:
                     data = "6";
                     break;
+                case R.id.ic_pingpong:
+                    data = "7";
+                    break;
             }
 
         }
@@ -63,6 +66,8 @@ public class PopupActivity extends Activity {
         sports[4].setOnClickListener(onClickListener);
         sports[5] = findViewById(R.id.ic_esports);
         sports[5].setOnClickListener(onClickListener);
+        sports[6] = findViewById(R.id.ic_pingpong);
+        sports[6].setOnClickListener(onClickListener);
         btnSelect = findViewById(R.id.btn_sports_select);
 
         btnSelect.setOnClickListener(new View.OnClickListener() {

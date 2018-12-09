@@ -23,6 +23,8 @@
         <activity android:name=".Activity.MainActivity"/>
         <activity android:name=".Activity.PostingActivity"/>
         <activity android:name=".Activity.PopupActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".Activity.LeagueActivity"/>
+        <activity android:name=".Activity.TournamentActivity"/>
 
     </application>
 

@@ -61,18 +61,27 @@ public class PostingActivity extends AppCompatActivity {
         string = getIntent().getStringExtra("sports");
         if (string.getBytes().length > 0) {
             if (string.equals("1")) {
-                num.setText(string);
+                sports.setImageResource(R.drawable.ic_soccer);
+                num.setText("");
             } else if (string.equals("2")) {
-                num.setText(string);
+                sports.setImageResource(R.drawable.ic_baseball);
+                num.setText("");
             } else if (string.equals("3")) {
-                num.setText(string);
+                sports.setImageResource(R.drawable.ic_basketball);
+                num.setText("");
             } else if (string.equals("4")) {
-                num.setText(string);
+                sports.setImageResource(R.drawable.ic_badminton);
+                num.setText("");
             } else if (string.equals("5")) {
-                num.setText(string);
+                sports.setImageResource(R.drawable.ic_dodgeball);
+                num.setText("");
             } else if (string.equals("6")) {
-                num.setText(string);
+                sports.setImageResource(R.drawable.ic_esports);
+                num.setText("");
             } else if(string.equals("7")){
+                sports.setImageResource(R.drawable.ic_pingpong);
+                num.setText("");
+            } else if(string.equals("8")){
                 num.setText("종목선택");
             }
 
