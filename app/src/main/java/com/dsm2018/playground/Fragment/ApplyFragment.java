@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.dsm2018.playground.Activity.LoginActivity;
+import com.dsm2018.playground.Activity.PostingActivity;
 import com.dsm2018.playground.Connector.API;
 import com.dsm2018.playground.Connector.ServiceGenerator;
 import com.dsm2018.playground.R;
@@ -59,6 +60,13 @@ public class ApplyFragment extends Fragment {
     {
         View view = inflater.inflate(R.layout.fragment_apply, container, false);
         tv = view.findViewById(R.id.message1);
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PostingActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }
