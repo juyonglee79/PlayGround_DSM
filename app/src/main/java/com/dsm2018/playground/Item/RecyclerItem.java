@@ -1,7 +1,5 @@
 package com.dsm2018.playground.Item;
 
-import android.widget.ImageView;
-
 public class RecyclerItem {
     private int sports;
     private String name;

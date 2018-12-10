@@ -45,5 +45,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/btn_sharomhall"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/back_square"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+    <ImageView
+        android:id="@+id/btn_pingpong"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/back_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/btn_playground"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/back_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sharomhall" />
+
+    <ImageView
+        android:id="@+id/btn_basketground"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_square"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_playground" />
+
+    <ImageView
+        android:id="@+id/btn_auditorium"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/back_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_playground" />
 </android.support.constraint.ConstraintLayout>

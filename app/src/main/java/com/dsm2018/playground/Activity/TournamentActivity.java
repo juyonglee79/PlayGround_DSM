@@ -2,12 +2,10 @@ package com.dsm2018.playground.Activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.dsm2018.playground.R;
 
-import java.awt.font.TextAttribute;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -34,26 +32,37 @@ public class TournamentActivity extends AppCompatActivity {
             @Override
             public void run() {
                 counter++;
+                if(counter == 1){
+                    line1.setBackgroundResource(R.color.yellow);
+                    line6.setBackgroundResource(R.color.yellow);
+                }else if(counter == 2){
+                    line2.setBackgroundResource(R.color.yellow);
+                    line5.setBackgroundResource(R.color.yellow);
+                }else if(counter == 3){
+                    line3.setBackgroundResource(R.color.yellow);
+                    line4.setBackgroundResource(R.color.yellow);
+                }else if(counter == 4){
+                    line7.setBackgroundResource(R.color.yellow);
+                }else if(counter == 5){
+                    line8.setBackgroundResource(R.color.yellow);
+                }else if(counter ==6){
+                    line9.setBackgroundResource(R.color.yellow);
+                }
             }
         };
         Timer timer = new Timer();
-        timer.schedule(tt, 0, 300);
+        timer.schedule(tt, 0, 500);
+        line1.setBackgroundResource(R.color.white);
+        line2.setBackgroundResource(R.color.white);
+        line3.setBackgroundResource(R.color.white);
+        line4.setBackgroundResource(R.color.white);
+        line5.setBackgroundResource(R.color.white);
+        line6.setBackgroundResource(R.color.white);
+        line7.setBackgroundResource(R.color.white);
+        line8.setBackgroundResource(R.color.white);
+        line9.setBackgroundResource(R.color.white);
+        counter = 0;
 
-        if(counter == 1){
-            line1.setBackgroundResource(R.color.yellow);
-            line6.setBackgroundResource(R.color.yellow);
-        }else if(counter == 2){
-            line2.setBackgroundResource(R.color.yellow);
-            line5.setBackgroundResource(R.color.yellow);
-        }else if(counter == 3){
-            line3.setBackgroundResource(R.color.yellow);
-            line4.setBackgroundResource(R.color.yellow);
-        }else if(counter == 4){
-            line7.setBackgroundResource(R.color.yellow);
-        }else if(counter == 5){
-            line8.setBackgroundResource(R.color.yellow);
-        }else if(counter ==6){
-            line9.setBackgroundResource(R.color.yellow);
-        }
+
     }
 }

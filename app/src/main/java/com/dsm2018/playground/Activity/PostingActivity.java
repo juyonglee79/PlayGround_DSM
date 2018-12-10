@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dsm2018.playground.Fragment.ApplyFragment;
 import com.dsm2018.playground.R;
 
 public class PostingActivity extends AppCompatActivity {
