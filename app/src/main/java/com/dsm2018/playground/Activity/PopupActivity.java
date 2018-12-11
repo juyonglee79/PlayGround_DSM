@@ -3,6 +3,7 @@ package com.dsm2018.playground.Activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -16,6 +17,8 @@ public class PopupActivity extends Activity {
     ImageView[] sports = new ImageView[7];
     TextView btnSelect;
     String data;
+    String where;
+
 
     class SportsOnClickListener implements Button.OnClickListener {
         @Override
@@ -54,6 +57,8 @@ public class PopupActivity extends Activity {
         setContentView(R.layout.activity_popup);
         SportsOnClickListener onClickListener = new SportsOnClickListener();
 
+        where = getIntent().getStringExtra("where");
+        Log.d("where", ""+where);
         sports[0] = findViewById(R.id.ic_soccer);
         sports[0].setOnClickListener(onClickListener);
         sports[1] = findViewById(R.id.ic_baseball);
@@ -74,6 +79,7 @@ public class PopupActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent toPosting = new Intent(PopupActivity.this, PostingActivity.class);
+                toPosting.putExtra("where", where);
                 toPosting.putExtra("sports", data);
                 startActivity(toPosting);
             }

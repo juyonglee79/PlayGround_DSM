@@ -6,15 +6,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Activity.PostingActivity">
 
+    <TextView
+        android:id="@+id/tv_where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="장소 : "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/img_setSports"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/back_circle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_where" />
 
     <TextView
         android:id="@+id/num"
@@ -33,23 +45,22 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:background="@color/main"
         android:text="점심"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/img_setSports"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_where" />
 
     <Button
         android:id="@+id/btn_dinner"
         android:layout_width="113dp"
         android:layout_height="40dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:background="@color/white"
         android:text="저녁"
         app:layout_constraintStart_toEndOf="@+id/btn_lunch"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_where" />
 
     <EditText
         android:id="@+id/et_time"
@@ -68,28 +79,44 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/back_mypage_box"
-        android:hint="제목을 입력하세요"
+        android:hint="제목"
         android:paddingStart="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_setSports" />
 
     <EditText
-        android:id="@+id/et_contents"
+        android:id="@+id/et_people"
         android:layout_width="match_parent"
-        android:layout_height="360dp"
+        android:layout_height="40dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/back_mypage_box"
-        android:hint="내용을 입력하세요"
+        android:hint="인원 수"
         android:paddingStart="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+    <EditText
+        android:id="@+id/et_contents"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_mypage_box"
+        android:hint="내용"
+        android:paddingStart="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_people" />
 
     <TextView
         android:id="@+id/btn_post"

@@ -33,6 +33,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
     public void onBindViewHolder(ItemViewHolder holder, int position) {
 //        holder.mSports.setText(mItems.get(position).getSports());
         holder.mTitle.setText(mItems.get(position).getTitle());
+        holder.mName.setText(mItems.get(position).getName());
         holder.mTime.setText(mItems.get(position).getTime());
         holder.mPlace.setText(mItems.get(position).getPlace());
         holder.mPeople.setText(mItems.get(position).getPeople());
@@ -47,8 +48,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
     // 커스텀 뷰홀더
 // item layout 에 존재하는 위젯들을 바인딩합니다.
     class ItemViewHolder extends RecyclerView.ViewHolder{
-        private ImageView mSports;
-        private TextView mName;
+         ImageView mSports;
+         TextView mName;
         private TextView mTitle;
         private TextView mTime;
         private TextView mPlace;

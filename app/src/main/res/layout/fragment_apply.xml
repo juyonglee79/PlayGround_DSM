@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -45,55 +46,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/btn_sharomhall"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/back_square"
+    <ImageButton
+        android:id="@+id/btn_basket"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_basket"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <ImageView
-        android:id="@+id/btn_pingpong"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/back_square"
+    <ImageButton
+        android:id="@+id/btn_sharomhall"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_sharomhall"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/btn_playground"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/back_square"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_playground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_sharomhall" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_basket" />
 
-    <ImageView
-        android:id="@+id/btn_basketground"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/back_square"
+    <ImageButton
+        android:id="@+id/btn_pingpong"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_pingpongplay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_playground" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/btn_auditorium"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:background="@drawable/back_square"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_auditorium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_playground" />
+
+
+
 </android.support.constraint.ConstraintLayout>

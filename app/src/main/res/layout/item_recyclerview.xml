@@ -23,7 +23,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="23dp"
         android:text="야구하자 비이이익~~"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="#000000"
         app:layout_constraintStart_toEndOf="@+id/img_sports"
         app:layout_constraintTop_toTopOf="parent" />

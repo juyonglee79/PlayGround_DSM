@@ -3,6 +3,7 @@ package com.dsm2018.playground.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,7 +22,9 @@ public class PostingActivity extends AppCompatActivity {
     EditText contents;
     TextView btnPost;
     TextView num;
+    TextView place;
     String string;
+    String where;
 
     class BtnOnClickListener implements Button.OnClickListener {
         @Override
@@ -29,6 +32,8 @@ public class PostingActivity extends AppCompatActivity {
             switch (view.getId()) {
                 case R.id.img_setSports:
                     Intent toPopup = new Intent(PostingActivity.this, PopupActivity.class);
+                    toPopup.putExtra("where", where);
+                    Log.d("zzzzzzzzzzzzzzzzz", ""+where);
                     startActivity(toPopup);
                     break;
                 case R.id.btn_lunch:
@@ -55,9 +60,25 @@ public class PostingActivity extends AppCompatActivity {
         BtnOnClickListener onClickListener = new BtnOnClickListener();
 
         num = findViewById(R.id.num);
+        place = findViewById(R.id.tv_where);
         sports = findViewById(R.id.img_setSports);
         sports.setOnClickListener(onClickListener);
         string = getIntent().getStringExtra("sports");
+        where = getIntent().getStringExtra("where");
+
+        if (where != null) {
+            if (where.equals("청죽관")) {
+                place.setText("장소 : 청죽관");
+            } else if (where.equals("새롬홀")) {
+                place.setText("장소 : 새롬홀");
+            } else if (where.equals("운동장")) {
+                place.setText("장소 : 운동장");
+            } else if (where.equals("탁구장")) {
+                place.setText("장소 : 탁구장");
+            } else if (where.equals("농구장")) {
+                place.setText("장소 : 농구장");
+            }
+        }
         if (string.getBytes().length > 0) {
             if (string.equals("1")) {
                 sports.setImageResource(R.drawable.ic_soccer);
@@ -77,14 +98,14 @@ public class PostingActivity extends AppCompatActivity {
             } else if (string.equals("6")) {
                 sports.setImageResource(R.drawable.ic_esports);
                 num.setText("");
-            } else if(string.equals("7")){
+            } else if (string.equals("7")) {
                 sports.setImageResource(R.drawable.ic_pingpong);
                 num.setText("");
-            } else if(string.equals("8")){
+            } else if (string.equals("8")) {
                 num.setText("종목선택");
             }
-
         }
+        Log.d("sdafasdfasdfasasdf", ""+where);
         btnLunch = findViewById(R.id.btn_lunch);
         btnLunch.setOnClickListener(onClickListener);
         btnDinner = findViewById(R.id.btn_dinner);
