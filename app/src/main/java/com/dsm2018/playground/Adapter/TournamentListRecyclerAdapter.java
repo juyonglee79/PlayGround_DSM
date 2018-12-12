@@ -9,14 +9,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dsm2018.playground.Item.RecyclerItem;
+import com.dsm2018.playground.Item.TournamentRecyclerItem;
 import com.dsm2018.playground.R;
 
 import java.util.ArrayList;
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemViewHolder> {
-    ArrayList<RecyclerItem> mItems;
+public class TournamentListRecyclerAdapter extends RecyclerView.Adapter<TournamentListRecyclerAdapter.ItemViewHolder> {
+    ArrayList<TournamentRecyclerItem> mItems;
 
-    public RecyclerAdapter(ArrayList<RecyclerItem> items) {
+    public TournamentListRecyclerAdapter(ArrayList<TournamentRecyclerItem> items){
         mItems = items;
     }
 
@@ -24,7 +25,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
     // 새로운 뷰 홀더 생성
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recyclerview, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_tournament_recycler,parent,false);
         return new ItemViewHolder(view);
     }
 
@@ -32,10 +33,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
     // View 의 내용을 해당 포지션의 데이터로 바꿉니다.
     @Override
     public void onBindViewHolder(ItemViewHolder holder, int position) {
-        holder.mSports.setImageResource(mItems.get(position).getSports());
-        holder.mTitle.setText(mItems.get(position).getTitle());
-        holder.mName.setText(mItems.get(position).getName());
-        holder.mTime.setText(mItems.get(position).getTime());
+//        holder.mSports.setText(mItems.get(position).getSports());
+        holder.mTitle.setText(mItems.get(position).getTournamentTitle());
+        holder.mHowLong.setText(mItems.get(position).getHowLong());
         holder.mPlace.setText(mItems.get(position).getPlace());
         holder.mPeople.setText(mItems.get(position).getPeople());
     }
@@ -48,21 +48,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemVi
 
     // 커스텀 뷰홀더
 // item layout 에 존재하는 위젯들을 바인딩합니다.
-    class ItemViewHolder extends RecyclerView.ViewHolder {
+    class ItemViewHolder extends RecyclerView.ViewHolder{
         ImageView mSports;
-        TextView mName;
         private TextView mTitle;
-        private TextView mTime;
+        private TextView mHowLong;
         private TextView mPlace;
         private TextView mPeople;
         Button join;
-
         public ItemViewHolder(View itemView) {
             super(itemView);
-            mSports = itemView.findViewById(R.id.img_sports);
-            mName = itemView.findViewById(R.id.tv_name);
+            mSports = itemView.findViewById(R.id.img_sports_tournamet);
             mTitle = itemView.findViewById(R.id.tv_postTitle);
-            mTime = itemView.findViewById(R.id.tv_time);
+            mHowLong = itemView.findViewById(R.id.tv_time);
             mPlace = itemView.findViewById(R.id.tv_place);
             mPeople = itemView.findViewById(R.id.tv_people);
             join = itemView.findViewById(R.id.btn_enjoy);

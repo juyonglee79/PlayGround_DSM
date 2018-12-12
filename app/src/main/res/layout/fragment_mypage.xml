@@ -41,52 +41,32 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/atlunch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="10dp"
-        android:text="점심 : "
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_profile" />
-
-    <TextView
         android:id="@+id/tv_atlunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
-        android:text="탁구"
+        android:layout_marginEnd="8dp"
+        android:text="점심 : 농구"
         android:textColor="#ffffff"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/atlunch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_profile" />
 
     <TextView
         android:id="@+id/atdinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
-        android:text="저녁 : "
+        android:layout_marginEnd="8dp"
+        android:text="저녁 : 축구"
         android:textColor="#ffffff"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/atlunch" />
-
-    <TextView
-        android:id="@+id/tv_atdinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="5dp"
-        android:text="축구"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/atdinner"
-        app:layout_constraintTop_toBottomOf="@+id/atlunch" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_atlunch" />
 
     <ImageView
         android:id="@+id/mypage_box"
@@ -149,7 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
-        android:text="신청가능"
+        android:text="신청불가능"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/mypage_box"
         app:layout_constraintTop_toTopOf="@+id/mypage_box" />

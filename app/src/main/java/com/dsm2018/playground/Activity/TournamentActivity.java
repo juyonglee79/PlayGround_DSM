@@ -11,7 +11,7 @@ import java.util.TimerTask;
 
 public class TournamentActivity extends AppCompatActivity {
     static int counter = 0;
-    TextView line1, line2, line3, line4, line5, line6, line7, line8, line9;
+    TextView line1, line2, line3, line4, line5, line6, line7, line8, line9, semifinal1, semifinal, winner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,9 @@ public class TournamentActivity extends AppCompatActivity {
         line7 = findViewById(R.id.line7);
         line8 = findViewById(R.id.line8);
         line9 = findViewById(R.id.line9);
+        semifinal = findViewById(R.id.semifinal1);
+        semifinal1 = findViewById(R.id.semifinal2);
+        winner = findViewById(R.id.winner);
 
         TimerTask tt = new TimerTask() {
             @Override
@@ -41,17 +44,20 @@ public class TournamentActivity extends AppCompatActivity {
                 }else if(counter == 3){
                     line3.setBackgroundResource(R.color.yellow);
                     line4.setBackgroundResource(R.color.yellow);
-                }else if(counter == 4){
+                } else if(counter == 4){
+                    semifinal.setText("김성욱");
+                    semifinal1.setText("최승호");
+                } else if(counter == 5){
                     line7.setBackgroundResource(R.color.yellow);
-                }else if(counter == 5){
+                }else if(counter == 6){
                     line8.setBackgroundResource(R.color.yellow);
-                }else if(counter ==6){
+                }else if(counter ==7){
                     line9.setBackgroundResource(R.color.yellow);
+                }else if(counter == 8){
+                    winner.setText("최승호");
                 }
             }
         };
-        Timer timer = new Timer();
-        timer.schedule(tt, 0, 500);
         line1.setBackgroundResource(R.color.white);
         line2.setBackgroundResource(R.color.white);
         line3.setBackgroundResource(R.color.white);
@@ -62,6 +68,8 @@ public class TournamentActivity extends AppCompatActivity {
         line8.setBackgroundResource(R.color.white);
         line9.setBackgroundResource(R.color.white);
         counter = 0;
+        Timer timer = new Timer();
+        timer.schedule(tt, 0, 400);
 
 
     }

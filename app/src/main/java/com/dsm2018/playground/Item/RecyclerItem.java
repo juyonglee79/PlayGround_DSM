@@ -9,7 +9,7 @@ public class RecyclerItem {
     private String people;
 
 
-    public RecyclerItem (int sports, String name, String title, String time, String place, String people){
+    public RecyclerItem(int sports, String name, String title, String time, String place, String people) {
         this.sports = sports;
         this.name = name;
         this.title = title;
@@ -18,11 +18,11 @@ public class RecyclerItem {
         this.people = people;
     }
 
-    public int getSports(){
+    public int getSports() {
         return sports;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -30,15 +30,15 @@ public class RecyclerItem {
         return title;
     }
 
-    public String getTime(){
+    public String getTime() {
         return time;
     }
 
-    public String getPlace(){
+    public String getPlace() {
         return place;
     }
 
-    public String getPeople(){
+    public String getPeople() {
         return people;
     }
 }

@@ -10,11 +10,12 @@ import android.widget.TextView;
 
 import com.dsm2018.playground.Activity.LeagueActivity;
 import com.dsm2018.playground.Activity.TournamentActivity;
+import com.dsm2018.playground.Activity.TournamentListActivity;
 import com.dsm2018.playground.R;
 
 public class TournamentFragment extends Fragment {
-    TextView tournament;
-    TextView league;
+    TextView applyT, goingT;
+    TextView applyL, goingL;
 
     public TournamentFragment()
     {
@@ -29,20 +30,34 @@ public class TournamentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view = (View) inflater.inflate(R.layout.fragment_tournament, container, false);
-        tournament = view.findViewById(R.id.btn_tournament);
-        tournament.setOnClickListener(new View.OnClickListener() {
+        goingT = view.findViewById(R.id.btn_goingTournament);
+        goingT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toTournament = new Intent(getActivity(), TournamentActivity.class);
-                startActivity(toTournament);
+                Intent toTournamentList = new Intent(getActivity(), TournamentListActivity.class);
+                startActivity(toTournamentList);
             }
         });
-        league = view.findViewById(R.id.btn_league);
-        league.setOnClickListener(new View.OnClickListener() {
+        applyT = view.findViewById(R.id.btn_apply_tournament);
+        applyT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        goingL = view.findViewById(R.id.btn_goingLeague);
+        goingL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent toLeage = new Intent(getActivity(), LeagueActivity.class);
                 startActivity(toLeage);
+            }
+        });
+        applyL = view.findViewById(R.id.btn_apply_league);
+        applyL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
         return view;

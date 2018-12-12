@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private int[] tabIcons = {
             R.drawable.ic_apply,
             R.drawable.ic_post,
-            R.drawable.ic_tournament,
+            R.drawable.ic_tournament_frag,
             R.drawable.ic_mypage
     };
 

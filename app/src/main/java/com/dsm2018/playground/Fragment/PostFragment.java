@@ -50,14 +50,14 @@ public class PostFragment extends Fragment {
         super.onCreate(savedInstanceState);
         initDataset();
     }
-
     private void initDataset() {
         //for Test
         arrayList = new ArrayList<>();
+        arrayList.add(new RecyclerItem((R.drawable.ic_basketball), "이주용", "키 크고 싶은 사람?", "5:50 ~ 6:40", "청죽관", "1/12"));
         arrayList.add(new RecyclerItem((R.drawable.ic_baseball), "김영찬", "야구할 파티원 구함", "6:00 ~ 6:30", "운동장", "7/8"));
-        arrayList.add(new RecyclerItem((R.drawable.ic_baseball), "황신우", "나루토처럼 놀아볼 사람 구함", "12:00 ~ 12:30", "청죽관", "1/5"));
-        arrayList.add(new RecyclerItem((R.drawable.ic_baseball), "문준협", "축구할 솨람~~", "6:10 ~ 6:40", "운동장", "18/22"));
-        arrayList.add(new RecyclerItem((R.drawable.ic_baseball), "홍순찬", "롤 할 사람?", "12:00 ~ 12:30", "새롬홀", "3/5"));
+        arrayList.add(new RecyclerItem((R.drawable.ic_pingpong), "황신우", "나루토처럼 놀아볼 사람 구함", "12:00 ~ 12:30", "탁구장", "1/5"));
+        arrayList.add(new RecyclerItem((R.drawable.ic_soccer), "문준협", "축구할 솨람~~", "6:10 ~ 6:40", "운동장", "18/22"));
+        arrayList.add(new RecyclerItem((R.drawable.ic_esports), "홍순찬", "롤 할 사람?", "12:00 ~ 12:30", "새롬홀", "3/5"));
     }
 
 }

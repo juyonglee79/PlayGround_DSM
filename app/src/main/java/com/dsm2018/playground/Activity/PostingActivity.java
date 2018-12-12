@@ -20,11 +20,13 @@ public class PostingActivity extends AppCompatActivity {
     EditText time;
     EditText title;
     EditText contents;
+    EditText people;
     TextView btnPost;
     TextView num;
     TextView place;
     String string;
     String where;
+    String getTime, getTitle, getPeople, getContent, getPlace;
 
     class BtnOnClickListener implements Button.OnClickListener {
         @Override
@@ -112,13 +114,23 @@ public class PostingActivity extends AppCompatActivity {
         btnDinner.setOnClickListener(onClickListener);
 
         time = findViewById(R.id.et_time);
+        getTime = time.getText().toString();
         title = findViewById(R.id.et_title);
+        getTitle = title.getText().toString();
+        people = findViewById(R.id.et_people);
+        getPeople = people.getText().toString();
         contents = findViewById(R.id.et_contents);
+        getContent = contents.getText().toString();
         btnPost = findViewById(R.id.btn_post);
         btnPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PostingActivity.this, MainActivity.class);
+//                intent.putExtra("where", ""+where);
+//                intent.putExtra("time", ""+getTime);
+//                intent.putExtra("title", ""+getTitle);
+//                intent.putExtra("people", ""+getPeople);
+//                intent.putExtra("content", ""+getContent);
                 startActivity(intent);
                 Toast toast = Toast.makeText(getApplicationContext(), "게시글 작성완료", Toast.LENGTH_SHORT);
                 toast.show();

@@ -49,18 +49,13 @@ public class LoginActivity extends AppCompatActivity {
                 if (getID.getBytes().length <= 0 | getPassword.getBytes().length <= 0 ) {
                     Toast.makeText(getApplicationContext(), "입력이 완료되지 않았습니다", Toast.LENGTH_SHORT).show();
                 } else {
+                    Intent toMain = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(toMain);
                     post();
                 }
             }
         });
-        passwordFind = findViewById(R.id.tv_findPassword);
-        passwordFind.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent3 = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent3);
-            }
-        });
+
         signIn = findViewById(R.id.tv_signUp);
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
