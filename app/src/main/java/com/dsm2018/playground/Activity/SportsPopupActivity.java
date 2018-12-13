@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.dsm2018.playground.R;
 
-public class PopupActivity extends Activity {
+public class SportsPopupActivity extends Activity {
     ImageView[] sports = new ImageView[7];
     TextView btnSelect;
     String data;
@@ -54,7 +54,7 @@ public class PopupActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_popup);
+        setContentView(R.layout.activity_popup_sports);
         SportsOnClickListener onClickListener = new SportsOnClickListener();
 
         where = getIntent().getStringExtra("where");
@@ -78,7 +78,7 @@ public class PopupActivity extends Activity {
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toPosting = new Intent(PopupActivity.this, PostingActivity.class);
+                Intent toPosting = new Intent(SportsPopupActivity.this, PostingActivity.class);
                 toPosting.putExtra("where", where);
                 toPosting.putExtra("sports", data);
                 startActivity(toPosting);

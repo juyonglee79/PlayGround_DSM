@@ -22,10 +22,13 @@
         <activity android:name=".Activity.SignInActivity"/>
         <activity android:name=".Activity.MainActivity"/>
         <activity android:name=".Activity.PostingActivity"/>
-        <activity android:name=".Activity.PopupActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
+        <activity android:name=".Activity.SportsPopupActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" />
         <activity android:name=".Activity.LeagueActivity"/>
         <activity android:name=".Activity.TournamentActivity"/>
         <activity android:name=".Activity.TournamentListActivity"/>
+        <activity android:name=".Activity.PeoplePopUpActivity"  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity android:name=".Activity.AlertPopUpActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+        <activity android:name=".Activity.LeagueApplyActivity"/>
     </application>
 
 </manifest>

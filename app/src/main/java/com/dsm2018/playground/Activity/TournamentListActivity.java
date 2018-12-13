@@ -29,8 +29,8 @@ public class TournamentListActivity extends AppCompatActivity {
 
         ArrayList<TournamentRecyclerItem> ArrayList = new ArrayList<>();
         ArrayList.add(new TournamentRecyclerItem((R.drawable.ic_soccer),"희명's 축구리그","12/20 ~ 12/30","운동장", "19/22"));
-        ArrayList.add(new TournamentRecyclerItem((R.drawable.ic_baseball),"영찬 배 통통 야구", "12/27 ~ 12/13","운동장", "6/20"));
         ArrayList.add(new TournamentRecyclerItem((R.drawable.ic_pingpong),"성욱배 탁구대회", "12/10 ~ 12/20","탁구장", "4/4"));
+        ArrayList.add(new TournamentRecyclerItem((R.drawable.ic_baseball),"영찬 배 통통 야구", "12/27 ~ 12/13","운동장", "6/20"));
 
         TournamentListRecyclerAdapter Adapter = new TournamentListRecyclerAdapter(ArrayList);
 

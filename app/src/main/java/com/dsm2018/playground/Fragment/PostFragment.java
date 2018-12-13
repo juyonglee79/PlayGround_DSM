@@ -1,5 +1,6 @@
 package com.dsm2018.playground.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -20,6 +21,7 @@ public class PostFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+
     private ArrayList<RecyclerItem> arrayList = new ArrayList<>();
 
     public PostFragment()
@@ -27,8 +29,8 @@ public class PostFragment extends Fragment {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_post, container, false);
+
         mRecyclerView = view.findViewById(R.id.post_recyclerview);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity());
@@ -43,6 +45,7 @@ public class PostFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
     }
 
     @Override
@@ -58,6 +61,7 @@ public class PostFragment extends Fragment {
         arrayList.add(new RecyclerItem((R.drawable.ic_pingpong), "황신우", "나루토처럼 놀아볼 사람 구함", "12:00 ~ 12:30", "탁구장", "1/5"));
         arrayList.add(new RecyclerItem((R.drawable.ic_soccer), "문준협", "축구할 솨람~~", "6:10 ~ 6:40", "운동장", "18/22"));
         arrayList.add(new RecyclerItem((R.drawable.ic_esports), "홍순찬", "롤 할 사람?", "12:00 ~ 12:30", "새롬홀", "3/5"));
+
     }
 
 }

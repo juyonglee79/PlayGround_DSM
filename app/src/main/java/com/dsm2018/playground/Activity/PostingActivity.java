@@ -33,7 +33,7 @@ public class PostingActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.img_setSports:
-                    Intent toPopup = new Intent(PostingActivity.this, PopupActivity.class);
+                    Intent toPopup = new Intent(PostingActivity.this, SportsPopupActivity.class);
                     toPopup.putExtra("where", where);
                     Log.d("zzzzzzzzzzzzzzzzz", ""+where);
                     startActivity(toPopup);

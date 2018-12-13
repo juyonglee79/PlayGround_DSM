@@ -10,11 +10,11 @@
         android:id="@+id/tv_where"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:text="장소 : "
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="47dp"
+        android:text="제목 : "
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,10 +23,10 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/back_circle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_where" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/num"
@@ -45,44 +45,44 @@
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:background="#19B6B6"
-        android:text="점심"
+        android:text="토너먼트"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/img_setSports"
-        app:layout_constraintTop_toBottomOf="@+id/tv_where" />
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
     <Button
         android:id="@+id/btn_dinner"
         android:layout_width="113dp"
         android:layout_height="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:background="@color/white"
-        android:text="저녁"
+        android:text="리그전"
         app:layout_constraintStart_toEndOf="@+id/btn_lunch"
-        app:layout_constraintTop_toBottomOf="@+id/tv_where" />
-
-    <EditText
-        android:id="@+id/et_time"
-        android:layout_width="240dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/back_mypage_box"
-        android:hint="00:00 ~ 00:00"
-        android:paddingStart="20sp"
-        app:layout_constraintStart_toEndOf="@+id/img_setSports"
-        app:layout_constraintTop_toBottomOf="@+id/btn_lunch" />
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
     <EditText
         android:id="@+id/et_title"
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/back_mypage_box"
+        android:hint="제목"
+        android:paddingStart="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_where"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_time"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/back_mypage_box"
-        android:hint="제목"
+        android:hint="대회 기간"
         android:paddingStart="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,11 +96,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/back_mypage_box"
-        android:hint="인원 수"
+        android:hint="참가 인원"
         android:paddingStart="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_title" />
+        app:layout_constraintTop_toBottomOf="@+id/et_time" />
 
     <EditText
         android:id="@+id/et_contents"
@@ -111,7 +111,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/back_mypage_box"
-        android:hint="내용"
+        android:hint="설명"
         android:paddingStart="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_post"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,7 +125,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="25dp"
-        android:text="게시글 올리기"
+        android:text="신청하기"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:gravity="center"

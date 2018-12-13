@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dsm2018.playground.Activity.LeagueActivity;
-import com.dsm2018.playground.Activity.TournamentActivity;
+import com.dsm2018.playground.Activity.LeagueApplyActivity;
 import com.dsm2018.playground.Activity.TournamentListActivity;
 import com.dsm2018.playground.R;
 
@@ -42,7 +42,8 @@ public class TournamentFragment extends Fragment {
         applyT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent toApplyTournament = new Intent(getActivity(), TournamentApplyActivity.class);
+                startActivity(toApplyTournament);
             }
         });
         goingL = view.findViewById(R.id.btn_goingLeague);
@@ -57,7 +58,8 @@ public class TournamentFragment extends Fragment {
         applyL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent toApplyLeage = new Intent(getActivity(), LeagueApplyActivity.class);
+                startActivity(toApplyLeage);
             }
         });
         return view;

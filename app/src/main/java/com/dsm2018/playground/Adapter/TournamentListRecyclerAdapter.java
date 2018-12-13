@@ -1,5 +1,7 @@
 package com.dsm2018.playground.Adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.dsm2018.playground.Item.RecyclerItem;
+import com.dsm2018.playground.Activity.TournamentActivity;
 import com.dsm2018.playground.Item.TournamentRecyclerItem;
 import com.dsm2018.playground.R;
 
@@ -33,7 +35,7 @@ public class TournamentListRecyclerAdapter extends RecyclerView.Adapter<Tourname
     // View 의 내용을 해당 포지션의 데이터로 바꿉니다.
     @Override
     public void onBindViewHolder(ItemViewHolder holder, int position) {
-//        holder.mSports.setText(mItems.get(position).getSports());
+        holder.mSports.setImageResource(mItems.get(position).getSportsT());
         holder.mTitle.setText(mItems.get(position).getTournamentTitle());
         holder.mHowLong.setText(mItems.get(position).getHowLong());
         holder.mPlace.setText(mItems.get(position).getPlace());
@@ -54,20 +56,42 @@ public class TournamentListRecyclerAdapter extends RecyclerView.Adapter<Tourname
         private TextView mHowLong;
         private TextView mPlace;
         private TextView mPeople;
+        private TextView goingHow;
         Button join;
+        int num;
+        Context context2;
+
         public ItemViewHolder(View itemView) {
             super(itemView);
+            context2 = itemView.getContext();
             mSports = itemView.findViewById(R.id.img_sports_tournamet);
             mTitle = itemView.findViewById(R.id.tv_postTitle);
             mHowLong = itemView.findViewById(R.id.tv_time);
             mPlace = itemView.findViewById(R.id.tv_place);
             mPeople = itemView.findViewById(R.id.tv_people);
+            goingHow = itemView.findViewById(R.id.btn_goingHow);
+            goingHow.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent toTournamentGoing = new Intent(context2, TournamentActivity.class);
+                    context2.getApplicationContext().startActivity(toTournamentGoing);
+                }
+            });
             join = itemView.findViewById(R.id.btn_enjoy);
+            num = 0;
             join.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    join.setBackgroundResource(R.color.joined);
-                    join.setText("참여중");
+                    if (num % 2 == 0) {
+                        join.setBackgroundResource(R.color.joined);
+                        join.setText("참여중");
+                        mPeople.setText("20/22");
+                    } else if (num % 2 == 1) {
+                        join.setBackgroundResource(R.color.notJoin);
+                        join.setText("참여하기");
+                        mPeople.setText("19/22");
+                    }
+                    num++;
                 }
             });
         }

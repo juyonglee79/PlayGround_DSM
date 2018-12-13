@@ -9,4 +9,5 @@
     <color name="gray">#808080</color>
     <color name="yellow">#FFEF0E</color>
     <color name="joined">#666666</color>
+    <color name="notJoin">#3cbcb8</color>
 </resources>
