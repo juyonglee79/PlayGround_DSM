@@ -29,6 +29,7 @@
         <activity android:name=".Activity.PeoplePopUpActivity"  android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
         <activity android:name=".Activity.AlertPopUpActivity" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
         <activity android:name=".Activity.LeagueApplyActivity"/>
+        <activity android:name=".Activity.SportsPopupActivity2" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
     </application>
 
 </manifest>

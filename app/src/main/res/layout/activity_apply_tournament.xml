@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="@+id/img_setSports" />
 
     <Button
-        android:id="@+id/btn_lunch"
+        android:id="@+id/btn_tournament"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginStart="23dp"
@@ -53,13 +53,13 @@
         app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
     <Button
-        android:id="@+id/btn_dinner"
+        android:id="@+id/btn_league"
         android:layout_width="113dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@color/white"
         android:text="리그전"
-        app:layout_constraintStart_toEndOf="@+id/btn_lunch"
+        app:layout_constraintStart_toEndOf="@+id/btn_tournament"
         app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
     <EditText
@@ -119,7 +119,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_people" />
 
     <TextView
-        android:id="@+id/btn_post"
+        android:id="@+id/btn_apply2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="25dp"
@@ -133,8 +133,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
-
 
 </android.support.constraint.ConstraintLayout>

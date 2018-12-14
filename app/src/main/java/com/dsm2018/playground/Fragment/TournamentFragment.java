@@ -42,7 +42,8 @@ public class TournamentFragment extends Fragment {
         applyT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toApplyTournament = new Intent(getActivity(), TournamentApplyActivity.class);
+                Intent toApplyTournament = new Intent(getActivity(), LeagueApplyActivity.class);
+               toApplyTournament.putExtra("sports", "8");
                 startActivity(toApplyTournament);
             }
         });
@@ -59,6 +60,7 @@ public class TournamentFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent toApplyLeage = new Intent(getActivity(), LeagueApplyActivity.class);
+                toApplyLeage.putExtra("sports", "8");
                 startActivity(toApplyLeage);
             }
         });
