@@ -15,6 +15,7 @@
         android:text="제목 : "
         android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,6 +38,7 @@
         android:text="종목 선택"
         android:textColor="#000000"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/img_setSports"
         app:layout_constraintTop_toTopOf="@+id/img_setSports" />
 
@@ -49,6 +51,7 @@
         android:background="#19B6B6"
         android:text="토너먼트"
         android:textColor="@color/white"
+        android:textStyle="normal"
         app:layout_constraintStart_toEndOf="@+id/img_setSports"
         app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
@@ -59,6 +62,7 @@
         android:layout_marginTop="8dp"
         android:background="@color/white"
         android:text="리그전"
+        android:textStyle="normal"
         app:layout_constraintStart_toEndOf="@+id/btn_tournament"
         app:layout_constraintTop_toBottomOf="@+id/et_title" />
 
@@ -70,6 +74,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/back_mypage_box"
         android:hint="제목"
+        android:textStyle="normal"
         android:paddingStart="20sp"
         app:layout_constraintStart_toEndOf="@+id/tv_where"
         app:layout_constraintTop_toTopOf="parent" />
@@ -84,6 +89,7 @@
         android:background="@drawable/back_mypage_box"
         android:hint="대회 기간"
         android:paddingStart="20sp"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_setSports" />
@@ -98,6 +104,7 @@
         android:background="@drawable/back_mypage_box"
         android:hint="참가 인원"
         android:paddingStart="20sp"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_time" />
@@ -113,6 +120,7 @@
         android:background="@drawable/back_mypage_box"
         android:hint="설명"
         android:paddingStart="20sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/btn_post"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,6 +136,7 @@
         android:text="신청하기"
         android:textColor="#ffffff"
         android:textSize="18sp"
+        android:textStyle="normal"
         android:gravity="center"
         android:background="@drawable/back_post"
         app:layout_constraintBottom_toBottomOf="parent"

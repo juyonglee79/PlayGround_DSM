@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -22,8 +23,8 @@
         android:layout_marginEnd="8dp"
         android:text="마이페이지"
         android:textColor="#ffffff"
+        android:textStyle="bold"
         android:textSize="20sp"
-        android:fontFamily="@font/B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,6 +49,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:text="점심 : 농구"
+        android:textStyle="normal"
         android:textColor="#ffffff"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,6 +64,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="8dp"
         android:text="저녁 : 축구"
+        android:textStyle="normal"
         android:textColor="#ffffff"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,27 +76,12 @@
         android:layout_width="360dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/back_mypage_box"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tournament"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:text="토너먼트 : 성욱배 탁구"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/atdinner" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/point"
@@ -102,6 +90,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:text="POINT"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/mypage_box"
         app:layout_constraintTop_toTopOf="@+id/mypage_box" />
 
@@ -109,9 +98,10 @@
         android:id="@+id/tv_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
         android:layout_marginTop="10dp"
+        android:layout_marginStart="45dp"
         android:text="17"
+        android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="@+id/mypage_box"
         app:layout_constraintTop_toBottomOf="@+id/point" />
@@ -123,6 +113,7 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="20dp"
         android:text="OUT"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/point"
         app:layout_constraintTop_toTopOf="@+id/mypage_box" />
 
@@ -133,6 +124,7 @@
         android:layout_marginStart="99dp"
         android:layout_marginTop="10dp"
         android:text="2"
+        android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintStart_toEndOf="@+id/tv_point"
         app:layout_constraintTop_toBottomOf="@+id/point" />
@@ -145,6 +137,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:text="신청불가능"
+        android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/mypage_box"
         app:layout_constraintTop_toTopOf="@+id/mypage_box" />
@@ -160,10 +153,11 @@
         android:id="@+id/tv_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
         android:text="로그아웃"
         android:textColor="#000000"
+        android:textStyle="normal"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_box" />
@@ -183,6 +177,7 @@
         android:layout_marginTop="30dp"
         android:text="비밀번호 변경"
         android:textColor="#000000"
+        android:textStyle="normal"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
@@ -202,6 +197,7 @@
         android:layout_marginTop="30dp"
         android:text="POINT 내역 조회"
         android:textColor="#000000"
+        android:textStyle="normal"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_changePassword" />
@@ -221,6 +217,7 @@
         android:layout_marginTop="30dp"
         android:text="버그 신고"
         android:textColor="#000000"
+        android:textStyle="normal"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_pointMany" />

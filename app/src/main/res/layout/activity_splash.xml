@@ -26,6 +26,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginEnd="8dp"
         android:text="좀 더 효율적인 체육생활"
+        android:textStyle="bold"
         android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
