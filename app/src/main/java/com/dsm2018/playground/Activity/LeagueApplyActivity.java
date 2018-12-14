@@ -26,6 +26,8 @@ public class LeagueApplyActivity extends AppCompatActivity {
 
         string = getIntent().getStringExtra("sports");
         where = getIntent().getStringExtra("where");
+        sports = findViewById(R.id.img_setSports);
+        num = findViewById(R.id.num);
         if (string.getBytes().length > 0) {
             if (string.equals("1")) {
                 sports.setImageResource(R.drawable.ic_soccer);
@@ -81,16 +83,16 @@ public class LeagueApplyActivity extends AppCompatActivity {
                 league.setTextColor(getResources().getColorStateList(R.color.white));
             }
         });
-//        apply.findViewById(R.id.btn_apply2);
-//        apply.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(LeagueApplyActivity.this, MainActivity.class);
-//                startActivity(intent);
-//                Toast toast = Toast.makeText(getApplicationContext(), "신청완료", Toast.LENGTH_SHORT);
-//                toast.show();
-//            }
-//        });
+        apply= findViewById(R.id.btn_apply2);
+        apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LeagueApplyActivity.this, MainActivity.class);
+                startActivity(intent);
+                Toast toast = Toast.makeText(getApplicationContext(), "신청완료", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
 
     }
 }

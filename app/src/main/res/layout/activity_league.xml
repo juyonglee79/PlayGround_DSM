@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:text="반대항 축구"
+        android:text="대마 축구팟"
         android:textColor="#19B6B6"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="20dp"
         android:background="#48E867"
-        android:text="11반"
+        android:text="1학년"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/explain" />
@@ -48,7 +48,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
-        android:text="2반"
+        android:text="2학년"
         app:layout_constraintStart_toEndOf="@+id/btn_A"
         app:layout_constraintTop_toBottomOf="@+id/explain" />
 
@@ -59,7 +59,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
-        android:text="3반"
+        android:text="3학년"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/btn_B"
         app:layout_constraintTop_toBottomOf="@+id/explain" />
@@ -71,7 +71,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
-        android:text="4반"
+        android:text="사제경기"
         app:layout_constraintStart_toEndOf="@+id/btn_C"
         app:layout_constraintTop_toBottomOf="@+id/explain" />
 
@@ -194,6 +194,7 @@
                 android:layout_width="70dp"
                 android:layout_height="40dp"
                 android:layout_marginRight="2dp"
+                android:text="2반"
                 android:background="@color/white"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
@@ -204,6 +205,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="3"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -213,6 +215,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="3"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -222,6 +225,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="0"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -231,6 +235,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="0"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -240,6 +245,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="100%"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -249,6 +255,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text=" 승 승 승"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -275,6 +282,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="2dp"
                 android:background="@color/white"
+                android:text="3반"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -284,6 +292,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="3"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -294,6 +303,7 @@
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
                 android:gravity="center_horizontal"
+                android:text="2"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -302,6 +312,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="0"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -311,6 +322,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="1"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -320,6 +332,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="70%"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -329,6 +342,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text=" 승 패 승"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -355,6 +369,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="2dp"
                 android:background="@color/white"
+                android:text="4반"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -365,6 +380,7 @@
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
                 android:gravity="center_horizontal"
+                android:text="3"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -374,6 +390,7 @@
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
                 android:gravity="center_horizontal"
+                android:text="1"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -382,6 +399,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="0"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -391,6 +409,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="2"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -401,6 +420,7 @@
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
                 android:gravity="center_horizontal"
+                android:text="40%"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -409,6 +429,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text=" 패 승 패"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -434,6 +455,7 @@
                 android:layout_width="70dp"
                 android:layout_height="40dp"
                 android:layout_marginRight="2dp"
+                android:text="1반"
                 android:background="@color/white"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
@@ -445,6 +467,7 @@
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
                 android:gravity="center_horizontal"
+                android:text="3"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -455,6 +478,7 @@
                 android:background="@color/white"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
+                android:text="0"
                 android:textSize="15sp" />
 
             <TextView
@@ -462,6 +486,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="0"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -471,6 +496,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="3"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -480,6 +506,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text="0%"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -489,6 +516,7 @@
                 android:layout_height="40dp"
                 android:layout_marginRight="1dp"
                 android:background="@color/white"
+                android:text=" 패 패 패"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
